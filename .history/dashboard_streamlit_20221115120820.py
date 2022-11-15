@@ -7,7 +7,7 @@ st.text('This is a dashboard for Beiwe data as analyzed by Caroline Sanicola.')
 
 
 df_1 = pd.read_csv(
-    'https://github.com/csanicola74/dashboard-streamlit/blob/main/data/5glhn8oo_clean_data.csv')
+    'https://github.com/csanicola74/dashboard-streamlit/blob/main/data/dmps4192_mergedSummaryExerciseData.csv')
 
 st.subheader('Satisfaction vs. Ability for Subject 1')
 sat_v_abil = df_1[['Ability', 'Satisfaction']]
