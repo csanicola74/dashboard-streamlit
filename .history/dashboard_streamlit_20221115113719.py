@@ -5,7 +5,7 @@ import numpy as np
 st.title('Beiwe Data Dashboard')
 
 DATE_COLUMN_1 = 'time_locs'
-DATA_URL_1 = ('https://github.com/csanicola74/dashboard-streamlit/blob/f4140222661bbc18145e9c1f0a64fb78fd7c30b8/data/dmps4192 mergedSummaryExerciseData.csv')
+DATA_URL_1 = ('')
 
 DATE_COLUMN_2 = 'time_locs'
 DATA_URL_2 = ('https://github.com/csanicola74/dashboard-streamlit/blob/f4140222661bbc18145e9c1f0a64fb78fd7c30b8/data/5glhn8oo mergedSummaryExerciseData.csvv')
