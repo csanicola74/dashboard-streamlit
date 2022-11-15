@@ -5,8 +5,8 @@ import streamlit as st
 
 #### Pull in both Dataframe - Head 100 ####
 
-df1 = pd.read_csv('5glhn8oo_clean_data.csv')
-df2 = pd.read_csv('dmps4192_clean_data.csv')
+df1 = pd.read_csv('data/5glhn8oo_clean_data.csv')
+df2 = pd.read_csv('data/dmps4192_clean_data.csv')
 
 #### Header ####
 
@@ -35,16 +35,17 @@ st.caption("Here is a simple bar graph representation of the subjects reported S
 
 #### Line Chart - Bite Incidents over time ####
 
-st.subheader('Type of Exercise for Subject 2')
-exercise = df2[['HeavyEx', 'ModerateEx', 'LightEx', 'week']]
-st.line_chart(exercise, x='week')
-st.caption(
-    "Here is a line chart displaying the type of exercise the subject reported doing each week")
+st.subheader('Bite Incidents From 2015 to 2017')
 
+over_time = df['DateOfBite'].value_counts()
+
+st.line_chart(over_time)
+
+st.caption("Here is a line chart displaying bite incidents over time")
 
 #### Code Block ####
 
-code = '''## Code behind the Line Chart for Subject 2
-exercise = df2[['HeavyEx', 'ModerateEx', 'LightEx', 'week']]
-st.line_chart(exercise, x='week')'''
+code = '''## Wondering how we included the toggle feature?
+if st.checkbox('Show first 100 records of DOHMH Dog Bite Dataset'):
+    st.dataframe(df)'''
 st.code(code, language='python')
