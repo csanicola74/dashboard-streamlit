@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 
 st.title('Beiwe Data Dashboard')
-st.text('This is a dashboard for Beiwe data as analyzed by Caroline Sanicola.')
 
 DATE_COLUMN_1 = 'time_locs'
 DATA_URL_1 = (
