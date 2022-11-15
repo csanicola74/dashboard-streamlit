@@ -38,7 +38,7 @@ st.caption(
 #### Line Chart - Bite Incidents over time ####
 
 st.subheader('Type of Exercise for Subject 2')
-exercise = df2[['heavyex', 'moderateex', 'lightex', 'week']]
+exercise = df2[['heavyEx', 'moderateEx', 'lightEx', 'week']]
 st.line_chart(exercise, x='week')
 st.caption(
     "Here is a line chart displaying the type of exercise the subject reported doing each week")
@@ -47,6 +47,6 @@ st.caption(
 #### Code Block ####
 
 code = '''## Code behind the Line Chart for Subject 2
-exercise = df2[['heavyex', 'moderateex', 'lightex', 'week']]
+exercise = df2[['heavyEx', 'moderateEx', 'LightEx', 'week']]
 st.line_chart(exercise, x='week')'''
 st.code(code, language='python')
