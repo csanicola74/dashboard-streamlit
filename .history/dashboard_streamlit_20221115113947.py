@@ -8,7 +8,7 @@ DATE_COLUMN_1 = 'time_locs'
 DATA_URL_1 = ('https://github.com/csanicola74/dashboard-streamlit/blob/f4140222661bbc18145e9c1f0a64fb78fd7c30b8/data/dmps4192_mergedSummaryExerciseData.csv')
 
 DATE_COLUMN_2 = 'time_locs'
-DATA_URL_2 = ('https://github.com/csanicola74/dashboard-streamlit/blob/f4140222661bbc18145e9c1f0a64fb78fd7c30b8/data/5glhn8oo_mergedSummaryExerciseData.csv')
+DATA_URL_2 = ('https://github.com/csanicola74/dashboard-streamlit/blob/f4140222661bbc18145e9c1f0a64fb78fd7c30b8/data/5glhn8oo_mergedSummaryExerciseData.csvv')
 
 
 @st.cache
