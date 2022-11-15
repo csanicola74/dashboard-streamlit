@@ -26,10 +26,10 @@ if st.checkbox('Show Subject 2 Dataset'):
     st.dataframe(df2)
 
 
-#### Barchart - Depression ####
+#### Barchart - Satisfaction vs Ability ####
 
 st.subheader('Reported Depressed State for Subject 1')
-depressed = df1['Depressed'].value_counts()
+depressed = df2['Depressed'].value_counts()
 st.bar_chart(depressed)
 st.caption(
     "Here is a simple bar graph representation of the subjects reported level of depression.")

@@ -26,13 +26,12 @@ if st.checkbox('Show Subject 2 Dataset'):
     st.dataframe(df2)
 
 
-#### Barchart - Depression ####
+#### Barchart - Satisfaction vs Ability ####
 
-st.subheader('Reported Depressed State for Subject 1')
-depressed = df1['Depressed'].value_counts()
-st.bar_chart(depressed)
-st.caption(
-    "Here is a simple bar graph representation of the subjects reported level of depression.")
+st.subheader('Days Out vs. Reported Depressed State for Subject 1')
+out_dep = df1[['Days_out', 'Depressed']]
+st.bar_chart(out_dep, x='Depressed', y='Days_out')
+st.caption("Here is a simple bar graph representation of the subjects reported level of depression vs. the number of days they were out.")
 
 
 #### Line Chart - Bite Incidents over time ####
