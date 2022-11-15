@@ -4,7 +4,7 @@ import numpy as np
 
 st.title('Uber pickups in NYC')
 
-DATE_COLUMN = 'Time_locs'
+DATE_COLUMN = 'date/time'
 DATA_URL = ('https://github.com/csanicola74/dashboard-streamlit/blob/4b3e9f08050775529d623db1e23453bbfc2a08c7/data/5glhn8oo_clean_data.csv')
 
 
